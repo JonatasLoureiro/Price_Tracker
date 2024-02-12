@@ -25,7 +25,7 @@ def inicia_browser():
     try:
         url = 'https://www.worten.pt/produtos/caixa-pc-nzxt-nzxt-cm-h71ew-02-computer-case-midi-tower-white-mrkean-5056547203522'
         # Encontra o preço
-        price = funcoes_procura.procura_value(url,driver,'value')
+        price = funcoes_procura.procura_por_value(url,driver,'value')
         return price
 
     except Exception as e:
