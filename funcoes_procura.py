@@ -13,7 +13,7 @@ from pypika import Table, Query
 import mysql.connector
 from mysql.connector import errorcode 
 
-def procura_value(site_url, driver, value_html):
+def procura_por_value(site_url, driver, value_html):
     driver.get(site_url)
     price_element = driver.find_element(By.CLASS_NAME, value_html)
     price_text = price_element.text.strip()
