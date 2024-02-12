@@ -33,7 +33,6 @@ def inicia_browser():
         price = None
         return price
     finally:
-        # Always close the browser, even in case of an exception
         driver.quit()
 
 
